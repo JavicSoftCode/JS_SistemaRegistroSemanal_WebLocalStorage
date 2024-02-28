@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/ED&&MD.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>PAGOS SEMANALES...</title>
+</head>
+<body>
+
+<!-- MOSTRAR_DATOS.html -->
+
+<form id="TABLE">
+    <h1>Pagos Semanales</h1>
+        <ul class="horizontal-list">
+            <li><a href="Guardar_Datos.html">R. Trab</a></li>
+            <li><a href="Editar_Datos.html">V. Asist</a></li>
+            <li><a href="Mostrar_Datos.html">V. Pagos</a></li>
+        </ul>
+                <div class="busquedad">
+                    <label for="searchInput"></label><input class="ipt_busquedad" type="text" id="searchInput"
+                                                            placeholder="Buscar por C.I o Nombre Apellido...">
+                    <button class="btn_busquedad" type="button" onclick="buscar()"><i
+                            class="fas fa-search icono-búsqueda"></i></button>
+                </div>
+                <table class="empresa-table">
+                    <thead>
+                    <tr>
+                        <th>C.I</th>
+                        <th>Area</th>
+                        <th>Tel</th>
+                        <th>P. Smnl</th>
+                        <th>Opc</th>
+                    </tr>
+                    </thead>
+                    <tbody id="ID_TbodyPagos">
+                    </tbody>
+                </table>
+</form>
+<script src="js/Mostrar_Datos.js"></script>
+</body>
+</html>

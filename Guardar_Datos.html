@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/Guardar_Datos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Registrar Trabajador... </title>
+</head>
+<body>
+
+<!-- GUARDAR_DATOS.html -->
+
+<form class="edit-form">
+    <h1>Registrar Trabajador </h1>
+
+    <ul class="horizontal-list" >
+        <li><a href="Guardar_Datos.html">R. Trab</a></li>
+        <li><a href="Editar_Datos.html">V. Asist</a></li>
+        <li><a href="Mostrar_Datos.html">V. Pagos</a></li>
+    </ul>
+
+    <div class="contenedor_2">
+
+        <div>
+            <label for="ID_CI">&nbsp;<i class="fas fa-id-card"></i>&nbsp;Cédula</label>
+            <input type="text" id="ID_CI" placeholder="C.I 01223334444...">
+        </div>
+
+        <div>
+            <label for="ID_NameLastname">&nbsp;<i class="fas fa-user-tie"></i>&nbsp;Trabajador</label>
+            <input type="text" id="ID_NameLastname" placeholder="Nombre & Apellido...">
+        </div>
+
+        <div>
+            <label for="ID_Area">&nbsp;<i class="fas fa-briefcase"></i>&nbsp;Area</label>
+            <input type="text" id="ID_Area" placeholder="Su desempeño...">
+        </div>
+
+        <div>
+            <label for="ID_ValorDia">&nbsp;<i class="fas fa-dollar-sign"></i>&nbsp;Valor del día</label>
+            <input type="number" id="ID_ValorDia" placeholder="Día $...">
+        </div>
+
+        <div>
+            <label for="ID_Cell">&nbsp;<i class="fas fa-mobile-alt"></i>&nbsp;Teléfono</label>
+            <input type="text" id="ID_Cell" placeholder="+593 999999999...">
+        </div>
+
+        <div>
+            <button type="submit" id="ID_Btn_GuardarInformacion">GUARDAR INFORMACIÓN</button>
+        </div>
+    </div>
+</form>
+
+<script src="js/Guardar_Datos.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

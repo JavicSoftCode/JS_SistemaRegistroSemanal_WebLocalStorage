@@ -1,0 +1,288 @@
+body {
+    overflow-y: auto;
+    background-color: white; /* Fondo translúcido de color plomo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 20px 30px 40px rgba(0, 0, 0, 0.1);
+
+}
+
+a, #llamadas {
+    background-color: rgb(255, 0, 0);
+    border: 3px solid rgba(0, 27, 132, 0.73);
+    box-shadow: 0 0 50px rgba(132, 0, 0, 0.73);
+    border-radius: 10px;
+    color: #f9f9f9;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.horizontal-list li {
+    display: inline;
+    margin-right: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 10px;
+    border: 5px solid #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 27, 132, 0.73);
+    color: #001b84;
+}
+
+/* Estilos para la ventana de contenido */
+#TABLE {
+    background-color: white;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0 0 50px rgb(0, 27, 132);
+    text-align: center;
+    width: 95%;
+    height: 95%;
+    overflow-y: auto; /* Agregado para permitir el desplazamiento vertical */
+}
+
+/* Estilos de la tabla */
+.empresa-table {
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgb(0, 27, 132);
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+.empresa-table th, .empresa-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+}
+
+.empresa-table th {
+    background-color: #f2f2f2;
+    font-size: 40px;
+    color: #001b84;
+    font-weight: bold;
+}
+
+/* Estilos para el formulario emergente */
+
+.edit-form {
+    background-color: white;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0 0 50px rgb(0, 27, 132);
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    overflow-y: auto; /* Agregado para permitir el desplazamiento vertical */
+
+}
+
+.edit-form label {
+    font-size: 60px;
+    font-weight: bold;
+    color: #001b84;
+    display: flex;
+    margin-top: 15px;
+}
+
+.edit-form input {
+    width: 98.5%;
+    font-size: 45px;
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 30px rgba(0, 27, 132, 0.73);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.edit-form button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #001b84;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.edit-form button.cancel-button {
+    margin-left: 50px;
+}
+
+.buttons-container {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    border: 3px solid rgba(0, 27, 132, 0.73);
+    box-shadow: 0 0 35px rgb(0, 27, 132);
+    font-size: 50px;
+    border-radius: 20px;
+    color: #0000FFFF;
+    font-weight: bold;
+    background-color: white;
+    display: none;
+}
+
+.close-button {
+    border: 2px solid rgba(0, 27, 132, 0.73);
+    box-shadow: 0 0 20px rgb(0, 27, 132);
+    width: 100%;
+    height: 20%;
+    font-size: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    border-top: none;
+    border-bottom: none;
+    background-color: #FF0000FF;
+    margin-top: 20px;
+}
+
+.button-style {
+    border: 3px solid rgba(0, 27, 132, 0.73);
+    box-shadow: 0 0 20px rgb(0, 27, 132);
+    width: 100%;
+    height: 20%;
+    font-size: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    border-top: none;
+    border-bottom: none;
+}
+
+.reset-button {
+    background-color: white;
+    color: #0000ff;
+    border: 5px solid rgb(135, 29, 29);
+    box-shadow: 0 0 10px rgba(0, 27, 132, 0.7);
+    border-top: none;
+    border-bottom: none;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+
+.delete-button {
+    background-color: white;
+    color: #0000ff;
+    border: 5px solid rgb(135, 29, 29);
+    box-shadow: 0 0 10px rgba(0, 27, 132, 0.7);
+    border-top: none;
+    border-bottom: none;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+
+.edit-button {
+    background-color: white;
+    color: #0000ff;
+    border: 5px solid rgb(135, 29, 29);
+    box-shadow: 0 0 10px rgba(0, 27, 132, 0.7);
+    border-top: none;
+    border-bottom: none;
+    border-radius: 10px;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.print-button {
+    background-color: white;
+    color: #0000ff;
+    box-shadow: 0 0 10px rgba(0, 27, 132, 0.7);
+    border: 5px solid rgb(135, 29, 29);
+    border-top: none;
+    border-bottom: none;
+    border-radius: 10px;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.mtr_btn {
+    background-color: white;
+    color: #0000ff;
+    border: 5px solid rgb(135, 29, 29);
+    box-shadow: 0 0 10px rgba(0, 27, 132, 0.7);
+    border-top: none;
+    border-bottom: none;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+
+.busquedad {
+    margin-bottom: 5%;
+}
+
+.btn_busquedad {
+    font-size: 45px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 0 20px rgba(7, 132, 0, 0.53);
+    background-color: #07f810;
+    color: #0000ff;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.ipt_busquedad {
+    font-size: 50px;
+    font-weight: bold;
+    box-shadow: 0 0 20px rgba(7, 132, 0, 0.53);
+    border-radius: 10px;
+    color: #0000ff;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.fila-encontrada {
+    background-color: #07f810;
+    border: 3px solid rgba(0, 27, 132, 0.73);
+    box-shadow: 0 0 50px rgba(0, 27, 132, 0.6);
+
+}
+
+.fila-encontradaMD {
+    background-color: #07f810;
+    border: 3px solid rgba(0, 27, 132, 0.73);
+    box-shadow: 0 0 50px rgba(0, 27, 132, 0.6);
+
+}
+
+
+.notificacion {
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    font-size: 80px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(252, 0, 0);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out, transform 0.5s ease-in-out;
+    transform-origin: bottom;
+    border: 5px solid rgba(0, 27, 132, 0.73);
+    box-shadow: 0 0 70px rgba(132, 0, 0, 0.73);
+}
